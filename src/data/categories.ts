@@ -1,0 +1,66 @@
+import type { Category, CategoryId } from '../types';
+
+export const categories: Record<CategoryId, Category> = {
+  cluster: {
+    id: 'cluster',
+    label: 'Cluster-scoped',
+    hex: '#a78bfa',
+    threeColor: 0xa78bfa,
+    text: 'text-indigo-300',
+    bg: 'bg-indigo-500/10',
+    border: 'border-indigo-500/30',
+    glow: 'rgba(167, 139, 250, 0.5)',
+  },
+  workload: {
+    id: 'workload',
+    label: 'Workloads',
+    hex: '#60a5fa',
+    threeColor: 0x60a5fa,
+    text: 'text-blue-300',
+    bg: 'bg-blue-500/10',
+    border: 'border-blue-500/30',
+    glow: 'rgba(96, 165, 250, 0.5)',
+  },
+  network: {
+    id: 'network',
+    label: 'Networking',
+    hex: '#34d399',
+    threeColor: 0x34d399,
+    text: 'text-emerald-300',
+    bg: 'bg-emerald-500/10',
+    border: 'border-emerald-500/30',
+    glow: 'rgba(52, 211, 153, 0.5)',
+  },
+  config: {
+    id: 'config',
+    label: 'Config',
+    hex: '#fbbf24',
+    threeColor: 0xfbbf24,
+    text: 'text-amber-300',
+    bg: 'bg-amber-500/10',
+    border: 'border-amber-500/30',
+    glow: 'rgba(251, 191, 36, 0.5)',
+  },
+  storage: {
+    id: 'storage',
+    label: 'Storage',
+    hex: '#c084fc',
+    threeColor: 0xc084fc,
+    text: 'text-purple-300',
+    bg: 'bg-purple-500/10',
+    border: 'border-purple-500/30',
+    glow: 'rgba(192, 132, 252, 0.5)',
+  },
+  identity: {
+    id: 'identity',
+    label: 'Identity',
+    hex: '#fb7185',
+    threeColor: 0xfb7185,
+    text: 'text-rose-300',
+    bg: 'bg-rose-500/10',
+    border: 'border-rose-500/30',
+    glow: 'rgba(251, 113, 133, 0.5)',
+  },
+};
+
+export const categoryList = Object.values(categories);
